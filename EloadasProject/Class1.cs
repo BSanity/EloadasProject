@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EloadasProject
 {
@@ -39,23 +35,16 @@ namespace EloadasProject
                         foglalasok[0, 0] = true;
                             vege = true;
 
-                    }
-         
+                    }       
                 }
-
             }
-
-
-
-            
-
-        
-
-          
-            
+            return vege;           
         }
            
-     
+     public int Szabadhelyek()
+        {
+           
+        }
 
     }
     
