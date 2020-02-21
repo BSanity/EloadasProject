@@ -41,8 +41,29 @@ namespace EloadasProject
             return vege;           
         }
            
-     public int Szabadhelyek()
+     public int Szabadhelyek
         {
+            get
+
+                {
+                int szabadhelyek = 0;
+                for (int i = 0; i < foglalasok.GetLength(0); i++)
+                {
+                    for (int j = 0; j < foglalasok.GetLength(1); j++)
+                    {
+                        if (foglalasok[i,j] !=true)
+                        {
+                            szabadhelyek++;
+
+
+                        }
+
+                    }
+
+                }
+                return szabadhelyek;
+
+            }
            
         }
 
