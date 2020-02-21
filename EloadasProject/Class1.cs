@@ -5,35 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EloadasProject
-{
-
-
-
-  class Szam {
-
-        int sorokSzama;
-        int helyekSzama;
+{  
         
-
-
-
-
-
-    }
-
-
+      
 
     public class Eloadas
     {
         bool[,] foglalasok;
 
-        public Eloadas(bool[,] foglalasok)
+        public Eloadas(int sorokSzama,int helyekSzama)
         {
-            this.foglalasok = foglalasok;
+            this.foglalasok = new bool[sorokSzama, helyekSzama];
+
+            if (!(sorokSzama >=0) || !(helyekSzama <= 0))
+            {
+            throw new ArgumentException(String.Format("A paraméterek nem nagyobbak 0-nál {0}:"));
+
+           }
         }
     }
-
-  
-
-
+    
 }
