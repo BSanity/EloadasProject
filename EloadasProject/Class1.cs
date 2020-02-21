@@ -13,6 +13,8 @@ namespace EloadasProject
 
         int sorokSzama;
         int helyekSzama;
+        
+
 
 
 
