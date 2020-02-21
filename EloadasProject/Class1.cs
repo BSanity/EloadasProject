@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace EloadasProject
 {
-    public class Class1
-    {
+
+
+
+  class Szam {
+
+        int sorokSzama;
+        int helyekSzama;
+
+
+
+
     }
+
+
+
+    public class Eloadas
+    {
+        bool[,] foglalasok;
+
+        public Eloadas(bool[,] foglalasok)
+        {
+            this.foglalasok = foglalasok;
+        }
+    }
+
+  
+
+
 }
